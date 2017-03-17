@@ -1,0 +1,88 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-color: #EDEEF0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.content
+	padding-top: 20px
+	margin-top: 20px
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+	background-color: #fff
+	text-align: center
+	input
+		margin-right: 10px
+		width: 70px
+		height: 30px
+		font-size: 20px
+		&::-webkit-input-placeholder
+			color: #C1C2C4	
+		&:-moz-placeholder
+			color: #C1C2C4	
+	.but
+		background-color: #7DC93F
+		border: none
+		color: #fff
+		margin-bottom: 20px
+		height: 40px
+		margin-left: 20px
+		width: 170px
+		font-size: 18px
+		&:hover
+			background-color: #94D260
+		&:active, &:focus
+			outline: none;
+		&:nth-child(2n)
+			background-color: #EE1600
+			width: 90px
+			&:hover
+				background-color: #FF4833
+	.work_area
+		height: 500px
+		background-color: #9B9A99
+		border-top: 1px #908F8D solid
+		position: relative
+		.block
+			position: absolute
+
+
+@import "media" // Всегда в конце
